@@ -1,0 +1,123 @@
+body {
+    background-image: url('../img/bg3.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius: 9px;
+    width: 95%;
+    margin-top: 30px;
+}
+
+.box-header {
+    background-color: rgba(97, 151, 170, 0.384);
+    padding: 20px;
+}
+
+
+.box-footer {
+    background-color: rgba(32, 32, 32, 0.349);
+    padding: 15px;
+}
+
+.logo_image {
+    opacity: 0.9;
+    border-radius: 7px;
+}
+
+.text-footer {
+    text-align: center;
+    color: white;
+}
+
+ul#redes_sociales li {
+    display: inline;
+}
+
+.cake-image {
+    height: 40%;
+    width: 90%;
+    padding: 5px;
+}
+
+
+.cake-box {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 200px;
+    height: 290px;
+    background: white;
+    border-radius: 3px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 10px;
+}
+
+.nombre {
+    font-size: 22px;
+}
+
+.descirpcion {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 28px;
+}
+
+.precio {
+    text-align: center;
+    background: rgba(132, 186, 222, 0.8);
+    font-size: 22px;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgba(131, 220, 255, 0.589);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.style-tables {
+    width: 100%; 
+    table-layout: fixed;
+}

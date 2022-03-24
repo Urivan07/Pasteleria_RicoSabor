@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/estilos_pasteleria.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <title>Pasteleria Rico-Sabor</title>
+    <script>
+        function abrirSeccion(evt, cityName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="box center">
+
+        <div class="box-header">
+            <img id="logo" src="assets/img/round_logo.PNG" class="logo_image center" alt="logo rico-sabor"
+                width="350px">
+        </div>
+
+        <div class="box-body">
+            <div class="tab">
+                <button class="tablinks active" onclick="abrirSeccion(event, 'Productos')">Productos</button>
+                <button class="tablinks" onclick="abrirSeccion(event, 'Ordenar')">Ordenar</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="Productos" class="tabcontent" style="display: inline;">
+                <h1 style="text-align: center;">Pasteleria Rico-Sabor agradece su preferencia</h1>
+
+                <h2 style="text-align: center;">Menu</h2>
+                <div class="cake-box">
+                    <div class="container">
+                        <img src="assets/img/pasteles/pastel1.jpg" alt="pastel de limon" class="cake-image">
+                        <div class="nombre">Limon</div>
+                        <div class="precio">$ 320.00</div>
+                        <div class="descirpcion">Delicioso pastel de limon multicapa relleno de betun, miel y jarabe de
+                            limon.</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/pasteles/pastel2.jpg" alt="pastel de chocolate amargo"
+                            class="cake-image">
+                        <div class="nombre">Amargo</div>
+                        <div class="precio">$ 350.00</div>
+                        <div class="descirpcion">Delicioso pastel de chocolate amargo con trozos de manzana,
+                            espolvoreado
+                            con una capa de canela.</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/pasteles/pastel3.jpg" alt="pastel frutal de chocolate"
+                            class="cake-image">
+                        <div class="nombre">Frutal Chocolate</div>
+                        <div class="precio">$ 400.00</div>
+                        <div class="descirpcion">Delicioso pastel de chocolate con crema de cacahuate y frutos rojos.
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/pasteles/pastel4.jpg" alt="pastel frutal vainilla" class="cake-image">
+                        <div class="nombre">Pastel Frutal</div>
+                        <div class="precio">$ 250.00</div>
+                        <div class="descirpcion">Delicioso pastel de vainilla relleno de betun y decorado con frutas.
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/pasteles/pastel5.jpg" alt="pay de frambuesa" class="cake-image">
+                        <div class="nombre">Pay Frambuesa</div>
+                        <div class="precio">$ 200.00</div>
+                        <div class="descirpcion">Delicioso pay decorado con betun y frambuesas.</div>
+                    </div>
+                </div>
+                <h2 style="text-align: center;">Adornos</h2>
+                <div class="cake-box">
+                    <div class="container">
+                        <img src="assets/img/adornos/adorno1.jpg" alt="numeros de edad" class="cake-image">
+                        <div class="nombre">Numeros Edad</div>
+                        <div class="precio">$ 45.00</div>
+                        <div class="descirpcion">Numeros conmemorativos de edad, variedad de colores.</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/adornos/adorno3.jpg" alt="regalo con dedicatoria" class="cake-image">
+                        <div class="nombre">Regalo</div>
+                        <div class="precio">$ 35.00</div>
+                        <div class="descirpcion">Adorno de regalo con dedicatoria.</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/adornos/adorno4.jpg" alt="figura conmemorativa de ocacion"
+                            class="cake-image">
+                        <div class="nombre">Figura Ocacion</div>
+                        <div class="precio">$ 100.00</div>
+                        <div class="descirpcion">Variedad de figuras conmemorativas para tu ocacion.</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/adornos/adorno5.jpg" alt="letras en cubo" class="cake-image">
+                        <div class="nombre">Letras en cubo</div>
+                        <div class="precio">$ 3.00 c/u</div>
+                        <div class="descirpcion">Letras para dedicatoria.</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/adornos/adorno6.jpg" alt="figura de galleta" class="cake-image">
+                        <div class="nombre">Figura Galleta</div>
+                        <div class="precio">$ 15.00 c/u</div>
+                        <div class="descirpcion">Deliciosa figura de galleta para adornar.</div>
+                    </div>
+                </div>
+                <h2 style="text-align: center;">Complementos</h2>
+                <div class="cake-box">
+                    <div class="container">
+                        <img src="assets/img/toppings/topping1.jpg" alt="complemento kinder bueno"
+                            class="cake-image">
+                        <div class="nombre">Kinder Bueno</div>
+                        <div class="precio">$ 50.00</div>
+                        <div class="descirpcion">Delicioso kinder bueno para adornar tu pastel.</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/toppings/topping2.jpg" alt="complemento frutos secos"
+                            class="cake-image">
+                        <div class="nombre">Frutos Secos</div>
+                        <div class="precio">$ 55.00</div>
+                        <div class="descirpcion">Deliciosos frutos secos a elegir para adorno.</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/toppings/topping3.jpg" alt="complemento frutos rojos"
+                            class="cake-image">
+                        <div class="nombre">Frutos rojos</div>
+                        <div class="precio">$ 45.00</div>
+                        <div class="descirpcion">Deliciosos frutos rojos a elegir(fresa, frambuesa, manzana, arandanos,
+                            cerezas, moras) para adorno.</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/toppings/topping4.jpg" alt="complemento huevo kinder"
+                            class="cake-image">
+                        <div class="nombre">Huevos Kinder</div>
+                        <div class="precio">$ 65.00</div>
+                        <div class="descirpcion">Delicioso huevo kinder para adornar tu pastel</div>
+                    </div>
+                    <div class="container">
+                        <img src="assets/img/toppings/topping5.jpg" alt="complemento almendras" class="cake-image">
+                        <div class="nombre">Nueces</div>
+                        <div class="precio">$ 35.00</div>
+                        <div class="descirpcion">Variedad nueces, almendras y pasas para adornar.</div>
+                    </div>
+                </div>
+            </div>
+            <div id="Ordenar" class="tabcontent">
+                <form id="pedido" action="pedido.js">
+                    <h1>Realizar Pedido</h1>
+                    <h3>Datos Cliente</h3>
+                    <label for="nombre">Cual es tu nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" class="form-control" placeholder="nombre"><br>
+                    <label for="telefono">Cual es tu telefono:</label><br>
+                    <input type="number" id="telefono" name="telefono" class="form-control" placeholder="telefono"><br>
+                    <label for="email">Cual es tu correo electronico:</label><br>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="email"><br>
+
+                    <h3>Orden</h3>
+                    <label for="orden">Cuales son los productos que gusta ordenar:</label><br>
+                    <input type="text" id="orden" name="orden" class="form-control" placeholder="orden"><br>
+
+                    <label for="orden">Desea agregar algun adorno?</label><br>
+                    <input type="radio" id="numeros_edad" name="complementos" value="numeros_edad">
+                    <label for="numeros_edad">Numeros Edad</label><br>
+
+                    <input type="radio" id="regalo_dedicatoria" name="complementos" value="regalo_dedicatoria">
+                    <label for="regalo_dedicatoria">Regalo Dedicatoria</label><br>
+
+                    <input type="radio" id="figura" name="complementos" value="figura">
+                    <label for="figura">Figura de Ocacion</label><br>
+
+                    <input type="radio" id="letras" name="complementos" value="letras">
+                    <label for="letras">Letras en cubo</label><br>
+
+                    <input type="radio" id="figura_galleta" name="complementos" value="figura_galleta">
+                    <label for="figura_galleta">Figura Galleta</label><br><br>
+
+
+                    <label for="orden">Desea agregar algun complemento?</label><br>
+                    <input type="checkbox" id="kinder_bueno" name="kinder_bueno" value="kinder_bueno">
+                    <label for="kinder_bueno">Kinder Bueno</label>
+
+                    <input type="checkbox" id="frutos_Secos" name="frutos_Secos" value="frutos_Secos">
+                    <label for="frutos_Secos">Frutos Secos</label>
+
+                    <input type="checkbox" id="frutos_rojos" name="frutos_rojos" value="frutos_rojos">
+                    <label for="frutos_rojos">Frutos rojos</label>
+
+                    <input type="checkbox" id="huevo_kinder" name="huevo_kinder" value="huevo_kinder">
+                    <label for="huevo_kinder">Huevos Kinder</label>
+
+                    <input type="checkbox" id="nueces" name="nueces" value="nueces">
+                    <label for="nueces">Nueces Almendras</label>
+
+                    <br><br>
+                    <div id="buttons" class="text-center">
+                        <button type="reset" class="btn btn-primary">
+                            <span class="fa fa-arrow-alt-circle-left"></span>
+                            Reset
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="fa fa-cash-register"></span>
+                            Ordenar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="box-footer">
+            <h2 class="text-footer">Contacto Rico-Sabor</h2>
+            <table style="width: 100%;">
+                <tr class="text-footer text-center">
+                    <th class="text-center">Telefono</th>
+                    <th class="text-center">Direccion</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Redes sociales</th>
+                </tr>
+                <tr class="text-footer">
+                    <td>7861231256</td>
+                    <td>Cale 6 No. 630 Mercado de Abastos, Guadalajara, Jalisco</td>
+                    <td>rico.sabor@gmail.com</td>
+                    <td>
+                        <ul id="redes_sociales">
+                            <li><span class="fa fa-twitter"></span></li>
+                            <li><span class="fa fa-facebook-f"></span></li>
+                            <li><span class="fa fa-youtube"></span></li>
+                            <li><span class="fa fa-instagram"></span></li>
+                            @rico_sabor
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

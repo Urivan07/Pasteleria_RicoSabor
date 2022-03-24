@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/estilos_pasteleria.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <title>Rico-Sabor Pastelero</title>
+    <script>
+        function abrirSeccion(evt, cityName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box center">
+
+        <div class="box-header">
+            <img id="logo" src="../assets/img/round_logo.PNG" class="logo_image center" alt="logo rico-sabor"
+                width="350px">
+        </div>
+
+        <div class="box-body">
+            <div class="tab">
+                <button class="tablinks active" onclick="abrirSeccion(event, 'Stock')">Stock</button>
+                <button class="tablinks" onclick="abrirSeccion(event, 'Ordenes')">Ordenes</button>
+            </div>
+
+            <div id="Stock" class="tabcontent" style="display: inline;">
+                <h1 style="text-align: center;">Cantidad Produccion</h1>
+                <h2 style="text-align: center;">Pasteles</h2>
+                <table class="table table-condensed table-sm style-tables">
+                    <tr class="text-center">
+                        <th class="text-center">Limon</th>
+                        <th class="text-center">Amargo</th>
+                        <th class="text-center">Frutal Chocolate</th>
+                        <th class="text-center">Pastel Frutal</th>
+                        <th class="text-center">Pay Frambuesa</th>
+                    </tr>
+                    <tr class="text-center">
+                        <td>6 pasteles</td>
+                        <td>9 pasteles</td>
+                        <td>13 pasteles</td>
+                        <td>20 pasteles</td>
+                        <td>8 pasteles</td>
+                    </tr>
+                </table>
+                <h2 style="text-align: center;">Adornos</h2>
+                <table class="table table-condensed table-sm style-tables">
+                    <tr class="text-center">
+                        <th class="text-center">Numeros Edad</th>
+                        <th class="text-center">Regalo</th>
+                        <th class="text-center">Figura Ocacion</th>
+                        <th class="text-center">Letras en cubo</th>
+                        <th class="text-center">Figura Galleta</th>
+                    </tr>
+                    <tr class="text-center">
+                        <td>50 numeros</td>
+                        <td>30 piezas</td>
+                        <td>35 piezas</td>
+                        <td>300 letras</td>
+                        <td>60 piezas</td>
+                    </tr>
+                </table>
+                <h2 style="text-align: center;">Complementos</h2>
+                <table class="table table-condensed table-sm style-tables">
+                    <tr class="text-center">
+                        <th class="text-center">Kinder Bueno</th>
+                        <th class="text-center">Frutos Secos</th>
+                        <th class="text-center">Frutos rojos</th>
+                        <th class="text-center">Huevos Kinder</th>
+                        <th class="text-center">Nueces</th>
+                    </tr>
+                    <tr class="text-center">
+                        <td>15 piezas</td>
+                        <td>20 kg</td>
+                        <td>13 kg</td>
+                        <td>20 piezas</td>
+                        <td>8 kg</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="Ordenes" class="tabcontent">
+                <h1 style="text-align: center;">Odenes pendientes</h1>
+                <table class="table table-condensed table-sm">
+                    <tr class="text-center">
+                        <th class="text-center">Orden</th>
+                        <th class="text-center">Cliente</th>
+                        <th class="text-center">Telefono</th>
+                        <th class="text-center">Email</th>
+                        <th class="text-center">Descripcion</th>
+                        <th class="text-center">Adornos</th>
+                        <th class="text-center">Complementos</th>
+                        <th class="text-center">Estado</th>
+                        <th class="text-center">Acciones</th>
+                    </tr>
+                    <tr class="text-center">
+                        <td>#5</td>
+                        <td>Gael Perez</td>
+                        <td>7896541236</td>
+                        <td>gael.perez@gmail.com</td>
+                        <td>Pastel Amargo, Pay Frambuesa</td>
+                        <td>Figura Galleta</td>
+                        <td>No</td>
+                        <td>Pendiente de surtir</td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-primary">
+                                Surtir
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>#4</td>
+                        <td>Rogelio Garcia</td>
+                        <td>4436594848</td>
+                        <td>roge@hotmail.com</td>
+                        <td>Pastel Frutal, Pastel Limon</td>
+                        <td>Numeros Edad</td>
+                        <td>Kinder Bueno</td>
+                        <td>Pendiente de surtir</td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-primary">
+                                Surtir
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>#3</td>
+                        <td>Maria Gonzales</td>
+                        <td>7224598683</td>
+                        <td>mari.g@yahoo.com</td>
+                        <td>Pay Frambuesa</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Surtido</td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>#2</td>
+                        <td>Rosario Santillan</td>
+                        <td>69912348978</td>
+                        <td>chayo@gmail.com</td>
+                        <td>Pastel Frutal, Pay Frambuesa, Pastel Limon</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Surtido</td>
+                        <td></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td>#1</td>
+                        <td>Urivan Rubio</td>
+                        <td>7861455465</td>
+                        <td>urivan07@gmail.com</td>
+                        <td>Pastel Frutal Chocolate</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>Surtido</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="box-footer">
+            <h2 class="text-footer">Contacto Rico-Sabor</h2>
+            <table style="width: 100%;">
+                <tr class="text-footer text-center">
+                    <th class="text-center">Telefono</th>
+                    <th class="text-center">Direccion</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Redes sociales</th>
+                </tr>
+                <tr class="text-footer">
+                    <td>7861231256</td>
+                    <td>Cale 6 No. 630 Mercado de Abastos, Guadalajara, Jalisco</td>
+                    <td>rico.sabor@gmail.com</td>
+                    <td>
+                        <ul id="redes_sociales">
+                            <li><span class="fa fa-twitter"></span></li>
+                            <li><span class="fa fa-facebook-f"></span></li>
+                            <li><span class="fa fa-youtube"></span></li>
+                            <li><span class="fa fa-instagram"></span></li>
+                            @rico_sabor
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
